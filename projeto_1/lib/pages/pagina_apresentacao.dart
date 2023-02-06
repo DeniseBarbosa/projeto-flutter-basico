@@ -14,7 +14,7 @@ class _PaginaApresentacaoState extends State<PaginaApresentacao> {
     //vamos aguardar 3 segundos,apos os 3 seg vai ser redirecionado o usuario para a pagina de login
     //pushReplacementNamed => n quer da a opção para o usuario voltar para a pagina de apresentação
     //Navigator.of(context) => api de navegação padrão
-    Future.delayed(Duration(seconds: 3))
+    Future.delayed(const Duration(seconds: 3))
         .then((_) => Navigator.of(context).pushReplacementNamed('/login')
         );
   }
